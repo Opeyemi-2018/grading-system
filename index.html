@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grading System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="top-text">Input student score for proper grading</h1>
+    <div class="container">
+      <form id="form">
+        <div class="group">
+          <label>English</label>
+          <input
+            class="input"
+            type="number"
+            data-course="english"
+            id="English"
+            placeholder="score for english"
+          />
+        </div>
+        <div class="group">
+          <label>Mathematics</label>
+          <input
+            class="input"
+            type="number"
+            data-course="maths"
+            id="maths"
+            autocomplete="off"
+            placeholder="score for mathematics"
+          />
+        </div>
+        <div class="group">
+          <label>Biology</label>
+          <input
+            class="input"
+            type="number"
+            id="bio"
+            autocomplete="off"
+            placeholder="score for biology"
+          />
+        </div>
+        <div class="group">
+          <label>Chemistry</label>
+          <input
+            class="input"
+            type="number"
+            id="chem"
+            autocomplete="off"
+            placeholder="score for Chemistry"
+          />
+        </div>
+        <div class="group">
+          <label>Physics</label>
+          <input
+            class="input"
+            type="number"
+            id="phy"
+            autocomplete="off"
+            placeholder="score for physics"
+          />
+        </div>
+        <div class="group">
+          <label>Computer</label>
+          <input
+            class="input"
+            type="number"
+            id="com"
+            autocomplete="off"
+            placeholder="score for Computer"
+          />
+        </div>
+        <div class="group">
+          <label>Statistic</label>
+          <input
+            class="input"
+            type="number"
+            id="stat"
+            autocomplete="off"
+            placeholder="score for Statistic"
+          />
+        </div>
+        <div class="group">
+          <label>Agriculture</label>
+          <input
+            class="input"
+            type="number"
+            id="agric"
+            autocomplete="off"
+            placeholder="score for agricultural science"
+          />
+        </div>
+
+        <p id="error"></p>
+        <div class="grade-btn">
+          <button id="btn">Grade Now</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="table-box">
+      <div class="table-row table-head">
+        <div class="table-cell">
+          <p>Subject</p>
+        </div>
+        <div class="table-cell">
+          <p>Score</p>
+        </div>
+        <div class="table-cell">
+          <p>Grade</p>
+        </div>
+      </div>
+
+      <div id="table-output">
+        <!-- <div class="table-row">
+          <div class="table-cell">
+            <p>Total-Average</p>
+          </div>
+          <div class="table-cell">
+            <p id="ave-s">-</p>
+          </div>
+          <div class="table-cell">
+            <p id="ave-g">-</p>
+          </div>
+        </div> -->
+      </div>
+      <div class="table-row table-head second-table">
+        <div class="table-cell">
+          <p>Total Average</p>
+        </div>
+        <div class="table-cell">
+          <p id="average">-</p>
+        </div>
+        <div class="table-cell">
+          <p id="average-grade">-</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

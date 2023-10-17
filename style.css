@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: gainsboro;
+  font-family: sans-serif;
+}
+
+.top-text {
+  color: #071952;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container {
+  margin: 20px auto 10px;
+  width: 50%;
+  padding: 0px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+form {
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #071952;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+input {
+  width: 50%;
+  padding: 7px;
+  border: 1px solid #071952;
+  color: #071952;
+  background-color: transparent;
+  /* margin-right: 20px; */
+}
+
+input::placeholder {
+  color: #999;
+  font-family: cursive;
+}
+
+.grade-btn {
+  display: flex;
+  justify-content: center;
+}
+.grade-btn button {
+  width: 50%;
+  background: #071952;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.grade-btn button:hover {
+  opacity: 0.8;
+}
+.grade-btn button:active {
+  opacity: 0.6;
+}
+
+#error {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: red;
+  white-space: nowrap;
+  padding: 4px 2px;
+  background: white;
+  font-size: 13px;
+  display: none;
+}
+/* 
+.warning-con {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #777;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+  padding: 10px;
+  display: none;
+}
+
+.warning-con p {
+  font-size: 20px;
+  color: gainsboro;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.warning-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.warning-con button {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 30%;
+  font-weight: bold;
+}
+
+.warning-con button:nth-child(1) {
+  background-color: green;
+  color: #fff;
+}
+.warning-con button:nth-child(1):active {
+  background-color: #00dfa2;
+}
+
+.warning-con button:nth-child(2) {
+  background-color: red;
+  color: #fff;
+}
+.warning-con button:nth-child(2):active {
+  background-color: #ff6969;
+} */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 800px) {
+  label {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  input {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .group {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .top-text {
+    font-size: 16px;
+  }
+  input {
+    padding: 5px;
+  }
+  label {
+    display: none;
+  }
+  .grade-btn button {
+    width: 73%;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 4px;
+  }
+
+  .container {
+    height: 380px;
+    width: 95%;
+    margin: 20px auto 10px;
+  }
+
+  input {
+    width: 70%;
+    padding: 5px;
+  }
+
+  #error {
+    white-space: wrap;
+    padding: 4px;
+    font-size: 13px;
+    width: 70%;
+  }
+  /* .warning-con {
+    width: 60%;
+  }
+
+  .warning-con p {
+    font-size: 15px;
+  }
+
+  .warning-con button {
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 20%;
+    font-weight: normal;
+  } */
+}
+
+.table-box {
+  margin: 50px auto 90px;
+}
+.table-row {
+  display: table;
+  width: 70%;
+
+  margin: 10px auto;
+  background: transparent;
+  color: #555;
+  font-size: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+}
+
+.table-cell {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #d6d4d4;
+  vertical-align: middle;
+}
+
+.table-head {
+  background-color: #071952;
+  color: #fff;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.second-table {
+  margin-top: 50px;
+}
+@media (max-width: 700px) {
+  .table-row {
+    width: 90%;
+  }
+  .table-cell {
+    font-size: 14px;
+  }
+
+  .second-table p {
+    white-space: nowrap;
+  }
+}
