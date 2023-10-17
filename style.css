@@ -51,7 +51,6 @@ input {
 
 input::placeholder {
   color: #999;
-  font-family: cursive;
 }
 
 .grade-btn {
@@ -85,7 +84,6 @@ input::placeholder {
   color: red;
   white-space: nowrap;
   padding: 4px 2px;
-  background: white;
   font-size: 13px;
   display: none;
 }
